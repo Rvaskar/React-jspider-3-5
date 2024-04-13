@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.card{
+    border-radius: 10px;
+    position: relative;
+  
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: aqua;
+    width: 100%;
+    padding-bottom: 60px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.image{
+    width: 90%;
+    margin: 5px auto;
+}
+.image img{
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+h2{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 5px 0;
+}
+h4{
+    text-align: center;
+}
+h3{
+    margin: 5px;
+}
+.btn{
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    height: 3rem;
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    background-color: blue;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+}
+.btn:active{
+    background-color: rgba(76, 76, 255, 0.768);
+}
