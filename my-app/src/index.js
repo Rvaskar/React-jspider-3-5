@@ -1,9 +1,16 @@
-import React, { createElement } from 'react';
+import React from 'react';
 // import ReactDOM from 'react-dom/client';
 import {createRoot} from 'react-dom/client';
-import './task.css';
+import Task2 from './Task2';
+
 // import App from './App';
-import Task from './Task';
+// import Task from './Task';
+// import App2 from './App2';
+// import Task from './Task';
+
+import Prac1 from './classComponant/Prac1';
+
+
 //! 8/04/2024---------day1
 // let root = document.getElementById('root')
 
@@ -57,4 +64,4 @@ import Task from './Task';
 
 //! class comp
 
-createRoot(document.getElementById('root')).render(<Task/>)
+createRoot(document.getElementById('root')).render(<Task2 />)

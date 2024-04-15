@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 import products from './data.json'
+import './task.css';
+
+console.log(products)
+//its having inbuilt property called state
 
 
 export default class Task extends Component {
@@ -11,11 +15,12 @@ export default class Task extends Component {
     }
 
 
-    
 
   render() {
     return (
+     
       <div className='container'>
+         {/* { console.log(this.state.data)} */}
         {this.state.data.map((v,i)=>{
             let {id,title,price,description,category,image}=v;
             return (
@@ -28,6 +33,8 @@ export default class Task extends Component {
               <h2>{title}</h2>
               <h4>{description.slice(0,50)}...</h4>
               <h3>RS. {price*68}</h3>
+             
+              
               {/* <p>{category}</p> */}
 
               <button className='btn'>Add to Cart</button>
@@ -36,6 +43,7 @@ export default class Task extends Component {
               </>
             )
         })}
+        
       </div>
     )
   }

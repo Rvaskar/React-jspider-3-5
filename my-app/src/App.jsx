@@ -86,3 +86,36 @@
 // }
 
 // export default App;
+
+
+//! class based componant with increament add 
+
+
+import React,{Component} from "react";
+
+class App extends Component{
+    state = {count:0}
+    Increament =()=>{
+        this.setState({count:this.state.count+1})
+    }
+    Decrement =()=>{
+        this.setState({count:this.state.count-1})
+    }
+    Reset =()=>{
+        this.setState({count:0})
+    }
+    render(){
+        return (
+            <>
+            <h1>{this.state.count}</h1>
+      <section>
+        <button onClick={this.Increament}>Increament</button>
+        <button onClick={this.Decrement}>Decrement</button>
+        <button onClick={this.Reset}>Reset</button>
+      </section>
+            </>
+        )
+    }
+}
+
+export default App
