@@ -1,14 +1,20 @@
 import React from 'react';
 // import ReactDOM from 'react-dom/client';
 import {createRoot} from 'react-dom/client';
-import Task2 from './Task2';
+// import Task2 from './Task2';
 
 // import App from './App';
 // import Task from './Task';
 // import App2 from './App2';
 // import Task from './Task';
 
-import Prac1 from './classComponant/Prac1';
+// import Prac1 from './classComponant/Prac1';
+
+// import Appd3 from './propsComponant/Appd3';
+// import App4 from './day4/App4';
+import App5 from './day5/App5'
+import App6 from './day6/App6';
+import App7 from './day7/App7';
 
 
 //! 8/04/2024---------day1
@@ -64,4 +70,4 @@ import Prac1 from './classComponant/Prac1';
 
 //! class comp
 
-createRoot(document.getElementById('root')).render(<Task2 />)
+createRoot(document.getElementById('root')).render(<App7/>)
