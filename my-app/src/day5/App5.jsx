@@ -86,11 +86,11 @@ const App5 = () => {
         console.log(id)
     }
   return (
-    <>
+    <div>
       <button onClick={(e)=>{
         handleClick('abc',120)
       }}>Click me</button>
-    </>
+    </div>
   )
 }
 

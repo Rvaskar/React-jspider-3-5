@@ -12,9 +12,13 @@ import {createRoot} from 'react-dom/client';
 
 // import Appd3 from './propsComponant/Appd3';
 // import App4 from './day4/App4';
-import App5 from './day5/App5'
-import App6 from './day6/App6';
-import App7 from './day7/App7';
+// import App5 from './day5/App5'
+// import App6 from './day6/App6';
+// import App7 from './day7/App7';
+import App8 from './day8/App8';
+import App9 from './day9/App9';
+import Nav9 from './day9/Nav9';
+import App10 from './day10/App10';
 
 
 //! 8/04/2024---------day1
@@ -70,4 +74,4 @@ import App7 from './day7/App7';
 
 //! class comp
 
-createRoot(document.getElementById('root')).render(<App7/>)
+createRoot(document.getElementById('root')).render(<App10/>)
