@@ -1,0 +1,17 @@
+Case 1
+Scenario: You pass the same count value (count = 4) back-to-back.
+Answer: Yes, useMemo will reuse the memoized value.
+Reason: If the dependency array ([count]) hasn't changed, useMemo will return the previously memoized value without recalculating the function. Passing the same count back-to-back ensures the function is not re-executed.
+Case 2
+Scenario: You pass different count values sequentially (count = 3, count = 5, count = 6). Then, you pass a previously used value (count = 3 or count = 5).
+Answer: No, useMemo will not reuse the earlier value.
+Reason: useMemo only retains the most recent computed value and does not keep a history of previous values. When count changes, useMemo recalculates the value. Even if you reuse a previously passed value (like count = 3), it will re-execute the function instead of fetching the earlier result.
+Case 3
+Scenario: You pass the same count value after three or four other values have been passed.
+Answer: No, useMemo does not remember old values.
+Reason: useMemo does not store a cache of multiple previous computations. It only retains the most recent memoized value based on the dependency array. Once count changes, the previous memoized value is discarded, and useMemo re-executes the function for the new value.
+Key Takeaways
+useMemo only retains the most recent computed value based on the dependencies.
+If the dependency value is the same as the previous render, useMemo uses the memoized value.
+It does not maintain a history of all previously computed values.
+Recomputations happen for any new value, even if it was previously passed.
